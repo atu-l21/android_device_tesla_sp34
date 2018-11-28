@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/wiko/k600/
+LOCAL_PATH := device/alcatel/5059d/
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_k600.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_5059d.mk
