@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-ifneq ($(filter k600,$(TARGET_DEVICE)),)
+ifneq ($(filter 5059d,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/wiko/k600/
+LOCAL_PATH := device/alcatel/5059d/
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
