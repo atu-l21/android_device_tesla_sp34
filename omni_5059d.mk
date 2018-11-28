@@ -15,8 +15,8 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-PRODUCT_DEVICE := k600
-PRODUCT_NAME := omni_k600
-PRODUCT_BRAND := wiko
-PRODUCT_MODEL := W_K600
-PRODUCT_MANUFACTURER := wiko
+PRODUCT_DEVICE := 5059d
+PRODUCT_NAME := omni_5059d
+PRODUCT_BRAND := Alcatel
+PRODUCT_MODEL := Alcatel_1x
+PRODUCT_MANUFACTURER := tcl
