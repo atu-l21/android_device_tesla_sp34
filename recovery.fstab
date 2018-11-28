@@ -14,13 +14,11 @@
 # limitations under the License.
 #
 
-/boot emmc /dev/block/platform/bootdevice/by-name/boot
-/data ext4 /dev/block/platform/bootdevice/by-name/userdata flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
-/system ext4 /dev/block/platform/bootdevice/by-name/system
-/cache ext4 /dev/block/platform/bootdevice/by-name/cache
-/misc emmc /dev/block/platform/bootdevice/by-name/para
-/recovery emmc /dev/block/platform/bootdevice/by-name/recovery
-/vendor ext4 /dev/block/platform/bootdevice/by-name/vendor
-/vendor_image emmc /dev/block/platform/bootdevice/by-name/vendor
-/external_sd vfat /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
-
+/boot            emmc              /dev/block/platform/bootdevice/by-name/boot		    flags=display="boot";backup=1
+/recovery        emmc              /dev/block/platform/bootdevice/by-name/recovery      flags=display="recovery";backup=1
+/system          ext4              /dev/block/platform/bootdevice/by-name/system        flags=display="system";backup=1
+/vendor          ext4              /dev/block/platform/bootdevice/by-name/vendor        flags=display="vendor";backup=1
+/data            ext4              /dev/block/platform/bootdevice/by-name/userdata      flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
+/cache           ext4              /dev/block/platform/bootdevice/by-name/cache
+/misc            emmc              /dev/block/platform/bootdevice/by-name/para
+/external_sd     auto              /dev/block/platform/externdevice/by-num/p1           flags=removable;storage;wipeingui;display="Micro SDcard"
