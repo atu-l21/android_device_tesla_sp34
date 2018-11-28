@@ -13,10 +13,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    charger
+
+PRODUCT_COPY_FILES += \
+    device/alcatel/5059d/recovery.fstab:recovery/root/recovery.fstab
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 PRODUCT_DEVICE := 5059d
 PRODUCT_NAME := omni_5059d
-PRODUCT_BRAND := Alcatel
-PRODUCT_MODEL := Alcatel_1x
+PRODUCT_BRAND := alcatel
+PRODUCT_MODEL := 5059d
 PRODUCT_MANUFACTURER := tcl
