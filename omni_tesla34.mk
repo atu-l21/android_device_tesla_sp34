@@ -27,11 +27,11 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/alcatel/5059d/recovery.fstab:recovery/root/recovery.fstab
+    device/alcatel/tesla34/recovery.fstab:recovery/root/recovery.fstab
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-PRODUCT_DEVICE := 5059d
-PRODUCT_NAME := omni_5059d
-PRODUCT_BRAND := alcatel
-PRODUCT_MODEL := 5059d
-PRODUCT_MANUFACTURER := tcl
+PRODUCT_DEVICE := tesla34
+PRODUCT_NAME := omni_tesla34
+PRODUCT_BRAND := tesla
+PRODUCT_MODEL := smartphone34
+PRODUCT_MANUFACTURER := comtrade
