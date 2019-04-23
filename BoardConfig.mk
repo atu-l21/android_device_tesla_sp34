@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/alcatel/5059d
+LOCAL_PATH := device/comtrade/tesla34
 
 TARGET_BOARD_PLATFORM := mt6739
-TARGET_BOOTLOADER_BOARD_NAME := 5059d
+TARGET_BOOTLOADER_BOARD_NAME := tesla34
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
