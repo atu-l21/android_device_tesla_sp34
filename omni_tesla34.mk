@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/alcatel/tesla34/recovery.fstab:recovery/root/recovery.fstab
+    device/comtrade/tesla34/recovery.fstab:recovery/root/recovery.fstab
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 PRODUCT_DEVICE := tesla34
