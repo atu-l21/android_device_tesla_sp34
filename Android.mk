@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-ifneq ($(filter 5059d,$(TARGET_DEVICE)),)
+ifneq ($(filter tesla34,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/alcatel/5059d/
+LOCAL_PATH := device/comtrade/tesla34/
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
