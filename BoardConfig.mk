@@ -33,6 +33,8 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TW_EXCLUDE_SUPERSU := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TARGET_HW_DISK_ENCRYPTION := true
 include $(LOCAL_PATH)/kernel.mk
 include device/generic/twrpbuilder/BoardConfig32.mk
 
