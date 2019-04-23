@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/alcatel/5059d/
+LOCAL_PATH := device/comtrade/tesla34/
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_5059d.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_tesla34.mk
