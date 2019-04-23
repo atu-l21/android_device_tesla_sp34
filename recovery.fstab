@@ -20,7 +20,7 @@
 /system_image    emmc              /dev/block/platform/bootdevice/by-name/system        flags=display="system";backup=1
 /vendor          ext4              /dev/block/platform/bootdevice/by-name/vendor        flags=display="vendor";backup=1
 /vendor_image    emmc              /dev/block/platform/bootdevice/by-name/vendor        flags=display="vendor";backup=1
-/data            ext4              /dev/block/platform/bootdevice/by-name/userdata      flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
+/data            f2fs              /dev/block/platform/bootdevice/by-name/userdata      flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /cache           ext4              /dev/block/platform/bootdevice/by-name/cache
 /misc            emmc              /dev/block/platform/bootdevice/by-name/para
 /external_sd     auto              /dev/block/platform/externdevice/by-num/p1           flags=removable;storage;wipeingui;display="Micro SDcard"
